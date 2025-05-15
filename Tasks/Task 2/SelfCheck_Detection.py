@@ -37,7 +37,7 @@ for l in list_paths:
   labels = [1] * 250 + [0] * 250
 
 
-  excel_name = f"detection_results/selfcheck/{lang}_selfcheck.xlsx"
+  excel_name = f"{lang}_selfcheck.xlsx"
   if os.path.exists(excel_name):
     x = pd.read_excel(excel_name, sheet_name="QA_Log")
   else:
@@ -68,7 +68,7 @@ import glob
 import matplotlib.pyplot as plt
 
 # Path pattern for input files
-path = "detection_results/selfcheck/*.xlsx"
+path = "*selfcheck.xlsx"
 list_paths = glob.glob(path)
 
 # Language colors matching example style
@@ -123,6 +123,6 @@ plt.tight_layout()
 
 
 # Save the plot
-output_path = "detection_results/selfcheck/combined_selfcheck_roc_curves.png"
+output_path = "combined_selfcheck_roc_curves.png"
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
 plt.show()
