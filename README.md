@@ -36,7 +36,7 @@ HalluVerse3/
 ├── ar_final_data.csv
 ├── tr_final_data.csv
 ```
-Create a **/dataset** directory in the root directory and place the files. 
+
 
 ---
 
@@ -58,3 +58,47 @@ HalluVerse3 supports multiple tasks regarding hallucination detection
 
 ---
 
+## 🚀 Getting Started
+
+Follow these steps to use the dataset and run benchmarks.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sabdaljalil2000/HalluVerse3.git
+cd HalluVerse3
+```
+
+### 1. Clone the Repository
+
+Download all required dependencies 
+
+
+### 2. Download the Dataset
+
+```bash
+mkdir data
+```
+Download the dataset files and place them in the \data directory 
+
+### 3. Run Benchmark Tasks
+
+- Task 1: LLM Benchmarking
+
+  ```bash
+  cd Tasks/Task 1
+  python llm_benchmarking.py
+  ```
+
+- Task 2: Detection Model Evaluation
+
+  - SelfCheckGPT:
+    ```bash
+    cd Tasks/Task 2
+    python SelfCheck_Detection.py
+    ```
+  - HaloCheck:
+    ```bash
+    cd Tasks/Task 2
+    python HaluScope_Detection.py
+    ```
