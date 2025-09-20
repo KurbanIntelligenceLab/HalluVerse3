@@ -2,7 +2,7 @@
 
 **Authors**: Samir Abdaljalil, Hasan Kurban, Erchin Serpedin
 
-**Paper Link**: Under Review
+**Paper Link**: [Under Review](https://arxiv.org/abs/2503.07833)
 
 ---
 
